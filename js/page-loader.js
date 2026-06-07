@@ -1,5 +1,5 @@
 const slug = document.body.getAttribute("data-service-page");
-const assetVersion = "20260607ct";
+const assetVersion = "20260607cu";
 
 document.body.innerHTML = document.body.innerHTML.replace('<div id="service-shell"></div>', `
   <header class="site-header">

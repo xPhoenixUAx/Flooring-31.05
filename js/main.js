@@ -9,6 +9,10 @@
   };
 
   const hydrateConfig = () => {
+    if (config.companyName && document.title) {
+      document.title = document.title.replaceAll("Floens", config.companyName);
+    }
+
     setText("[data-company-name]", config.companyName);
     setText("[data-company-legal-name]", config.companyLegalName);
     setText("[data-company-id]", config.companyId);
