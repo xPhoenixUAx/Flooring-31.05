@@ -1,0 +1,10 @@
+.legal-content {
+  max-width: 860px;
+}
+.legal-content h2 {
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  margin-top: 42px;
+  margin-bottom: 14px;
+}
+.legal-content p, .legal-content li { color: var(--muted); }
+.legal-content ul { padding-left: 20px; }

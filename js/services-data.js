@@ -1,0 +1,110 @@
+window.FLOORING_SERVICES = [
+  {
+    slug: "hardwood-floor-installation",
+    title: "Hardwood Floor Installation",
+    eyebrow: "Natural wood flooring",
+    image: "img/services/hardwood-installation.webp",
+    short: "Site-ready hardwood installation with careful layout, moisture checks, clean transitions, and a finish built around the character of real wood.",
+    intro: "Hardwood flooring is chosen for warmth, lifespan, and the way it elevates the whole room. Our installation process starts before the first board is placed: we check subfloor flatness, confirm moisture conditions, plan board direction, balance cuts, and protect adjoining finishes so the floor feels intentional from wall to wall.",
+    situations: ["New home flooring and major remodels", "Replacing dated carpet or damaged wood", "Open-plan living rooms that need consistent plank flow", "Matching new hardwood into existing rooms", "Premium resale upgrades with durable material value"],
+    process: ["Review wood species, plank width, finish, and room conditions", "Prepare and flatten the subfloor for stable installation", "Acclimate material when required by product guidelines", "Install boards with clean expansion gaps and precise transitions", "Inspect movement, trim details, and final surface presentation"],
+    details: ["Solid and engineered hardwood options", "Nail-down, glue-down, or floating systems where appropriate", "Moisture-aware installation planning", "Reducer, threshold, and stair transition coordination"],
+    faq: [["How long does hardwood installation take?", "Most standard rooms take one to several days depending on square footage, subfloor preparation, layout complexity, and whether existing flooring must be removed."], ["Can hardwood go in kitchens?", "Engineered hardwood can work well in many kitchens when moisture risks are managed and the product is suitable for the space."], ["Do you help choose plank direction?", "Yes. We plan direction based on sightlines, light, room shape, joists, and transitions into adjacent spaces."]]
+  },
+  {
+    slug: "luxury-vinyl-plank-flooring",
+    title: "Luxury Vinyl Plank Flooring",
+    eyebrow: "Water-resistant performance",
+    image: "img/services/luxury-vinyl-plank.webp",
+    short: "Durable LVP installation for busy homes, kitchens, basements, rental properties, and everyday spaces that need style without fragile maintenance.",
+    intro: "Luxury vinyl plank gives homeowners a practical balance: wood-look texture, softer underfoot feel, strong wear layers, and moisture resistance. The quality of the finished floor depends heavily on preparation, plank layout, expansion control, and transition planning.",
+    situations: ["Kitchen and basement floor upgrades", "Pet-friendly and family-friendly living spaces", "Rental units that need durable finishes", "Budget-conscious remodels with premium visual impact", "Replacing uneven sheet vinyl or worn laminate"],
+    process: ["Confirm product rating, wear layer, and installation method", "Remove old flooring and inspect the substrate", "Level ridges, dips, and seams that can telegraph through planks", "Dry-lay key rows to avoid narrow cuts at walls", "Install, roll or lock planks, then finish transitions and trim"],
+    details: ["Click-lock and glue-down LVP systems", "Waterproof product guidance", "Sound underlayment considerations", "Kitchen, bath, basement, and utility room suitability"],
+    faq: [["Is LVP really waterproof?", "Many LVP products are waterproof, but the floor system still needs correct edges, transitions, and subfloor preparation to perform well."], ["Can it go over existing tile?", "Sometimes, if the tile is stable, flat, and within product tolerance. We verify conditions before recommending an overlay."], ["Does LVP look artificial?", "Better products have realistic embossing, varied plank patterns, and matte finishes that feel much more natural than older vinyl flooring."]]
+  },
+  {
+    slug: "porcelain-ceramic-tile-installation",
+    title: "Porcelain & Ceramic Tile Installation",
+    eyebrow: "Precision tile work",
+    image: "img/services/tile-installation.webp",
+    short: "Porcelain and ceramic floor tile installation with thoughtful layout, waterproofing awareness, flatness control, and clean grout lines.",
+    intro: "Tile floors reward precision. A beautiful tile project depends on substrate preparation, tile layout, cut planning, movement joints, mortar selection, and consistent spacing. We build tile floors that feel crisp, practical, and properly integrated with the surrounding architecture.",
+    situations: ["Bathrooms, laundry rooms, kitchens, and entries", "Large-format porcelain floors", "Replacing cracked or hollow tile", "Water-prone rooms needing durable surfaces", "Decorative layouts with borders, patterns, or stone looks"],
+    process: ["Inspect subfloor structure and deflection risk", "Prepare cement board, membrane, or approved substrate", "Plan tile layout around focal lines and room edges", "Set tile with proper mortar coverage and leveling systems", "Grout, clean haze, seal where needed, and finish edges"],
+    details: ["Porcelain, ceramic, mosaic, and stone-look tile", "Large-format tile leveling", "Waterproofing coordination for wet areas", "Grout color and joint width planning"],
+    faq: [["Why do tile floors crack?", "Cracking often comes from substrate movement, poor coverage, missing movement joints, or installation over unstable surfaces."], ["Can large tile go in small rooms?", "Yes. Large-format tile can make small rooms feel calmer when layout and cuts are planned carefully."], ["Do all tiles need sealing?", "Porcelain usually does not, but cementitious grout and some natural stone products may require sealing."]]
+  },
+  {
+    slug: "laminate-floor-installation",
+    title: "Laminate Floor Installation",
+    eyebrow: "Efficient wood-look surfaces",
+    image: "img/services/laminate-flooring.webp",
+    short: "Clean laminate installation for living areas, bedrooms, offices, and remodels where speed, durability, and budget control matter.",
+    intro: "Modern laminate is a strong option for homeowners who want a crisp wood-look floor at a controlled cost. We focus on flatness, underlayment selection, expansion gaps, door jamb cuts, and plank distribution so the floor does not feel like a quick cover-up.",
+    situations: ["Bedroom and living room refreshes", "Home office upgrades", "Budget-sensitive remodels", "Replacing old carpet with easier maintenance", "Multi-room projects that need visual consistency"],
+    process: ["Confirm AC rating, plank thickness, and underlayment needs", "Remove existing flooring and prep the surface", "Map plank starts and avoid repetitive patterns", "Install click-lock rows with correct expansion space", "Finish with trim, reducers, and clean threshold details"],
+    details: ["Scratch-resistant product guidance", "Integrated or separate underlayment", "Floating floor expansion planning", "Door casing and base trim coordination"],
+    faq: [["Is laminate good for pets?", "Many laminate products resist scratches well, but moisture handling varies by product. We help match the floor to the household."], ["Can laminate be installed in bathrooms?", "Only certain water-resistant products are appropriate, and even then the room details matter."], ["Will it sound hollow?", "A flat subfloor and the right underlayment reduce hollow sound and improve the feel underfoot."]]
+  },
+  {
+    slug: "hardwood-floor-refinishing",
+    title: "Hardwood Floor Refinishing",
+    eyebrow: "Restore existing wood",
+    image: "img/services/floor-refinishing.webp",
+    short: "Sanding, staining, and refinishing services that revive worn hardwood while preserving the character already built into the home.",
+    intro: "Refinishing can transform a tired wood floor without replacing it. The work requires controlled sanding, dust management, stain sampling, finish selection, and careful edge work around trim, thresholds, and built-ins.",
+    situations: ["Scratched, dull, or sun-faded hardwood", "Color updates before moving in", "Water marks or worn traffic paths", "Preparing a home for sale", "Blending older floors with new wood sections"],
+    process: ["Assess wood thickness and previous finish condition", "Protect adjoining rooms and manage dust", "Sand progressively for a smooth, even surface", "Apply stain samples or natural finish options", "Seal with the selected finish and review curing guidance"],
+    details: ["Natural, matte, satin, and darker stain looks", "Dust-conscious sanding workflow", "Spot repairs and board replacement where feasible", "Finish cure and furniture return guidance"],
+    faq: [["Can every hardwood floor be refinished?", "Not always. Very thin wear layers, severe damage, or some engineered products may limit sanding options."], ["How soon can furniture go back?", "That depends on the finish system. Light use can often resume before full cure, but furniture and rugs need more careful timing."], ["Can you remove deep stains?", "Some stains sand out, while deeper pet or water damage may require board replacement or a darker finish strategy."]]
+  },
+  {
+    slug: "carpet-installation",
+    title: "Carpet Installation",
+    eyebrow: "Comfort-focused rooms",
+    image: "img/services/carpet-installation.webp",
+    short: "Carpet installation for bedrooms, stairs, media rooms, and family spaces where comfort, sound control, and softness matter.",
+    intro: "Carpet brings warmth, acoustic comfort, and a softer room experience. We help select fiber, pile, pad, and seam strategy, then install with proper stretching and clean edges so the carpet stays smooth and comfortable.",
+    situations: ["Bedrooms and upper-level rooms", "Media rooms and playrooms", "Stair carpet replacement", "Rental turnovers and refresh projects", "Noise reduction in busy households"],
+    process: ["Review carpet fiber, pile, color, and pad options", "Measure rooms and plan seams with traffic direction in mind", "Remove old carpet and inspect tack strips and subfloor", "Install pad, stretch carpet, trim edges, and finish thresholds", "Vacuum, inspect seams, and review care recommendations"],
+    details: ["Nylon, polyester, wool, and blended carpet guidance", "Pad thickness and density selection", "Stair runners and full stair carpet", "Seam placement and transition strips"],
+    faq: [["Why does carpet wrinkle?", "Wrinkles often come from poor stretching, incorrect pad, humidity changes, or product age."], ["Which carpet is best for stairs?", "Dense, durable carpet with the right pad and installation method performs better on stairs than loose or overly soft options."], ["Can carpet help with noise?", "Yes. Carpet and quality pad absorb impact sound and make bedrooms and upper levels quieter."]]
+  },
+  {
+    slug: "subfloor-repair-leveling",
+    title: "Subfloor Repair & Leveling",
+    eyebrow: "The foundation of a better floor",
+    image: "img/services/subfloor-leveling.webp",
+    short: "Subfloor repair, leveling, patching, and preparation services that protect the final flooring investment from movement and uneven wear.",
+    intro: "Many flooring problems begin below the finished surface. Dips, movement, moisture, squeaks, rot, or cracked concrete can compromise even premium materials. We prepare the substrate so the finished floor sits properly and lasts longer.",
+    situations: ["Uneven rooms before LVP, tile, or hardwood", "Squeaky or soft wood subfloors", "Concrete slab cracks and low spots", "Old flooring removal that reveals damage", "Flooring manufacturer flatness requirements"],
+    process: ["Inspect substrate type, flatness, movement, and moisture", "Remove loose material and identify structural concerns", "Patch, fasten, grind, or level as appropriate", "Use approved primers, compounds, or panels", "Confirm tolerances before finish flooring begins"],
+    details: ["Self-leveling compound and patch systems", "Plywood repair and fastening", "Concrete grinding and crack treatment", "Moisture and flatness checks"],
+    faq: [["Can leveling fix every floor?", "Leveling fixes many surface issues, but structural movement or severe framing problems may need additional repair first."], ["Why is subfloor prep so important?", "Finish floors mirror the surface below them. Poor prep can cause gaps, hollow tile, plank separation, noise, and premature wear."], ["Do I need this before every project?", "Not always, but every project should be checked. The best flooring result starts with knowing the substrate."]]
+  },
+  {
+    slug: "commercial-flooring",
+    title: "Commercial Flooring",
+    eyebrow: "Durable business surfaces",
+    image: "img/services/commercial-flooring.webp",
+    short: "Commercial flooring installation for offices, studios, retail suites, rental properties, and shared spaces that need clean execution and durable surfaces.",
+    intro: "Commercial flooring has to work harder than residential flooring. It needs to tolerate traffic, cleaning routines, rolling loads, tenant turnover, and brand presentation. We plan installation around access, durability, downtime, and maintenance expectations.",
+    situations: ["Office and retail fit-outs", "Property management and tenant improvements", "Small clinics, studios, and service spaces", "Durable flooring for high-traffic corridors", "Fast refreshes between leases"],
+    process: ["Review traffic level, maintenance needs, and schedule constraints", "Select commercial LVP, carpet tile, sheet goods, or tile systems", "Prepare concrete or existing substrate", "Install in coordinated phases to reduce disruption", "Complete transitions, base, punch list, and care guidance"],
+    details: ["Commercial LVP and glue-down systems", "Carpet tile and modular replacement planning", "Slip resistance and maintenance considerations", "After-hours or phased project coordination where possible"],
+    faq: [["What flooring is best for offices?", "Commercial LVP and carpet tile are common choices, but the best option depends on traffic, acoustics, budget, and design goals."], ["Can work be phased?", "Many commercial projects can be phased by area to reduce downtime and keep parts of the space usable."], ["Do you handle transitions and base?", "Yes. The finish details are planned with the flooring so the space looks complete and practical."]]
+  },
+  {
+    slug: "stair-trim-floor-finishing",
+    title: "Stair, Trim & Floor Finishing",
+    eyebrow: "Details that make floors feel built-in",
+    image: "img/services/stair-trim-finishing.webp",
+    short: "Stair treads, nosing, base shoe, thresholds, reducers, and finishing details that make new flooring feel integrated rather than simply installed.",
+    intro: "The most noticeable parts of a flooring project are often the edges: stair nosing, doorway transitions, base trim, reducers, and places where materials meet. We treat finishing details as part of the design, not an afterthought.",
+    situations: ["New flooring meeting stairs or landings", "Replacing bulky or mismatched transition strips", "Base shoe and quarter-round installation", "Stair tread upgrades with hardwood or LVP", "Finishing remodels after multi-room flooring work"],
+    process: ["Map all transitions, edges, stairs, and trim conditions", "Select profiles that match flooring thickness and style", "Cut, fit, fasten, and finish details cleanly", "Coordinate stain, paint, or color-matched profiles", "Inspect sightlines, gaps, and daily-use edges"],
+    details: ["Stair treads, risers, nosing, and landings", "Reducers, thresholds, T-molds, and end caps", "Base shoe, quarter-round, and trim returns", "Color and finish matching"],
+    faq: [["Why do transitions matter so much?", "They protect edges, reduce trip points, and visually connect rooms. Poor transitions can make expensive flooring look unfinished."], ["Can stairs match my new floor?", "Often yes. Options include matching wood, coordinating LVP stair components, or custom-finished treads."], ["Do you paint trim?", "We can coordinate trim finish requirements in the scope, depending on the project details and desired result."]]
+  }
+];

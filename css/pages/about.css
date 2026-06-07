@@ -1,0 +1,11 @@
+.standards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.standard {
+  padding: 28px;
+  border-top: 3px solid var(--copper);
+  background: rgba(255,255,255,.5);
+}
+@media (max-width: 800px) { .standards-grid { grid-template-columns: 1fr; } }

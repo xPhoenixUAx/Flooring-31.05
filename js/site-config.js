@@ -1,0 +1,20 @@
+window.SITE_CONFIG = {
+  companyName: "Floens",
+  companyLegalName: "Floens Flooring Services",
+  companyId: "XXXXXXXXXXXXX",
+  phone: "+15550182461",
+  phoneDisplay: "(555) 018-2461",
+  phoneButtonLabel: "Get a Quote",
+  email: "hello@floensflooring.com",
+  addressLine1: "Service address placeholder",
+  addressLine2: "Local flooring service area",
+  serviceArea: "Residential and commercial flooring projects",
+  businessHours: "Mon-Fri 8:00-18:00, Sat by appointment",
+  footerTextPrimary: "Precision tile and flooring solutions for homes, offices, rental properties, and remodels.",
+  footerTextSecondary: "Planning, installation, repair, refinishing, and finishing details handled with a clean, material-first process.",
+  disclaimerShort: "Project timelines and material availability vary by site conditions, selected products, and preparation requirements.",
+  disclaimerFull: "Information on this website is provided for general service planning only. Final recommendations, scope, pricing, and warranty details are confirmed after an on-site or remote project review.",
+  copyrightLine: "All rights reserved.",
+  ctaPrimary: "Get a Quote",
+  ctaSecondary: "Explore Services"
+};
