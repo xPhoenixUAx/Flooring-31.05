@@ -1,23 +1,23 @@
 const slug = document.body.getAttribute("data-service-page");
-const assetVersion = "20260607cs";
+const assetVersion = "20260607ct";
 
 document.body.innerHTML = document.body.innerHTML.replace('<div id="service-shell"></div>', `
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name>Floens</span></a>
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a>
       <nav class="desktop-nav" aria-label="Primary">
         <a href="index.html">Home</a><a href="about.html">About</a><div class="nav-dropdown"><a class="nav-dropdown__trigger" href="services.html">Services<i data-lucide="chevron-down" aria-hidden="true"></i></a><div class="nav-dropdown__menu" data-services-dropdown></div></div><a href="contact.html">Contact</a>
       </nav>
       <div class="header-actions">
-        <a class="icon-btn phone-icon" data-phone-link aria-label="Call" href="tel:+15550182461"><i data-lucide="phone" aria-hidden="true"></i></a>
-        <a class="btn" href="contact.html" data-cta-primary>Get a Quote</a>
+        <a class="icon-btn phone-icon" data-phone-link aria-label="Call" href="#"><i data-lucide="phone" aria-hidden="true"></i></a>
+        <a class="btn" href="contact.html" data-cta-primary></a>
         <button class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu"></button>
       </div>
     </div>
   </header>
   <div class="mobile-menu" data-mobile-menu>
     <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
-    <div class="mobile-menu__meta"><a class="btn" href="contact.html">Get a Quote</a><p data-footer-text-primary></p></div>
+    <div class="mobile-menu__meta"><a class="btn" href="contact.html" data-cta-primary></a><p data-footer-text-primary></p></div>
   </div>
   <main>
     <section class="service-hero">
@@ -56,7 +56,7 @@ document.body.innerHTML = document.body.innerHTML.replace('<div id="service-shel
           <p>Share the room, existing surface, material idea, and any unevenness, moisture, stairs, pets, or timing concerns. We will help clarify the right scope.</p>
         </div>
         <div class="service-detail-cta__actions">
-          <a class="btn" href="contact.html">Get a Quote</a>
+          <a class="btn" href="contact.html" data-cta-primary></a>
           <a class="text-link" data-phone-link data-phone-text></a>
         </div>
       </div>
@@ -69,7 +69,7 @@ document.body.innerHTML = document.body.innerHTML.replace('<div id="service-shel
       <div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a></div></div>
       <div><h3>Legal pages</h3><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
     </div>
-    <div class="container footer-bottom"><div class="footer-bottom__meta"><span>&copy; <span data-year></span> <span data-company-legal-name></span>. <span data-company-id></span></span><span data-disclaimer-short></span></div><p class="footer-disclaimer" data-footer-disclaimer></p></div>
+    <div class="container footer-bottom"><div class="footer-bottom__meta"><span>&copy; <span data-year></span> <span data-company-legal-name></span>. <span data-company-id></span>. <span data-copyright-line></span></span><span data-disclaimer-short></span></div><p class="footer-disclaimer" data-footer-disclaimer></p></div>
   </footer>`);
 
 document.body.setAttribute("data-service-page", slug);

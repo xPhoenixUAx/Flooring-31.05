@@ -1,21 +1,26 @@
 window.SITE_CONFIG = {
-  companyName: "Floens",
-  companyLegalName: "Floens Flooring Services",
+  companyName: "Floors",
+  companyLegalName: "Floors Flooring Services",
   companyId: "XXXXXXXXXXXXX",
   phone: "+15550182461",
   phoneDisplay: "(555) 018-2461",
   phoneButtonLabel: "Get a Quote",
-  email: "hello@floensflooring.com",
+  email: "hello@floorsflooring.com",
   addressLine1: "Service address placeholder",
   addressLine2: "Local flooring service area",
   serviceArea: "Residential and commercial flooring projects",
   businessHours: "Mon-Fri 8:00-18:00, Sat by appointment",
-  footerTextPrimary: "Precision tile and flooring solutions for homes, offices, rental properties, and remodels.",
-  footerTextSecondary: "Planning, installation, repair, refinishing, and finishing details handled with a clean, material-first process.",
-  disclaimerShort: "Project timelines and material availability vary by site conditions, selected products, and preparation requirements.",
-  disclaimerFull: "Information on this website is provided for general service planning only. Final recommendations, scope, pricing, and warranty details are confirmed after an on-site or remote project review.",
-  footerDisclaimer: "Disclaimer: This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.",
+  footerTextPrimary:
+    "Precision tile and flooring solutions for homes, offices, rental properties, and remodels.",
+  footerTextSecondary:
+    "Planning, installation, repair, refinishing, and finishing details handled with a clean, material-first process.",
+  disclaimerShort:
+    "Project timelines and material availability vary by site conditions, selected products, and preparation requirements.",
+  disclaimerFull:
+    "Information on this website is provided for general service planning only. Final recommendations, scope, pricing, and warranty details are confirmed after an on-site or remote project review.",
+  footerDisclaimer:
+    "Disclaimer: This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.",
   copyrightLine: "All rights reserved.",
   ctaPrimary: "Get a Quote",
-  ctaSecondary: "Explore Services"
+  ctaSecondary: "Explore Services",
 };

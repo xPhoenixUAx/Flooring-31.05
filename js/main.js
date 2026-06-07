@@ -20,6 +20,9 @@
     setText("[data-disclaimer-short]", config.disclaimerShort);
     setText("[data-disclaimer-full]", config.disclaimerFull);
     setText("[data-footer-disclaimer]", config.footerDisclaimer);
+    setText("[data-service-area]", config.serviceArea);
+    setText("[data-business-hours]", config.businessHours);
+    setText("[data-copyright-line]", config.copyrightLine);
     setText("[data-year]", new Date().getFullYear());
 
     document.querySelectorAll("[data-phone-link]").forEach((link) => {
@@ -29,7 +32,7 @@
       link.href = `mailto:${config.email || ""}`;
     });
     document.querySelectorAll("[data-cta-primary]").forEach((node) => {
-      node.textContent = config.ctaPrimary || "Get a Quote";
+      node.textContent = config.ctaPrimary || "";
     });
   };
 
