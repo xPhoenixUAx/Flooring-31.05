@@ -14,6 +14,7 @@ window.SITE_CONFIG = {
   footerTextSecondary: "Planning, installation, repair, refinishing, and finishing details handled with a clean, material-first process.",
   disclaimerShort: "Project timelines and material availability vary by site conditions, selected products, and preparation requirements.",
   disclaimerFull: "Information on this website is provided for general service planning only. Final recommendations, scope, pricing, and warranty details are confirmed after an on-site or remote project review.",
+  footerDisclaimer: "Disclaimer: This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.",
   copyrightLine: "All rights reserved.",
   ctaPrimary: "Get a Quote",
   ctaSecondary: "Explore Services"

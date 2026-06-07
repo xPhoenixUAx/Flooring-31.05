@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,17 +6,77 @@
   <meta name="description" content="About Floens flooring services: material-aware planning, clean installation, and premium finish details.">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bundle.css?v=20260606c">
+  <link rel="stylesheet" href="css/bundle.css?v=20260607ca">
 </head>
-<body>
-  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><nav class="desktop-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><div class="header-actions"><a class="btn" href="contact.html">Get a Quote</a><button class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu"></button></div></div></header>
-  <div class="mobile-menu" data-mobile-menu><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><div class="mobile-menu__meta"><a class="btn" href="contact.html">Get a Quote</a><p data-footer-text-primary></p></div></div>
+<body class="about-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name>Floens</span></a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="index.html">Home</a><a href="about.html">About</a><div class="nav-dropdown"><a class="nav-dropdown__trigger" href="services.html">Services<i data-lucide="chevron-down" aria-hidden="true"></i></a><div class="nav-dropdown__menu" data-services-dropdown></div></div><a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn phone-icon" data-phone-link aria-label="Call" href="tel:+15550182461"><i data-lucide="phone" aria-hidden="true"></i></a>
+        <a class="btn" href="contact.html" data-cta-primary>Get a Quote</a>
+        <button class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu"></button>
+      </div>
+    </div>
+  </header>
+    <div class="mobile-menu" data-mobile-menu>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
+    <div class="mobile-menu__meta"><a class="btn" href="contact.html">Get a Quote</a><p data-footer-text-primary></p></div>
+  </div>
   <main>
-    <section class="page-hero"><div class="container page-hero__grid"><div><p class="eyebrow">About Floens</p><h1>Flooring work with design restraint and site discipline.</h1></div><p class="lead">We approach flooring as a permanent architectural surface: it has to carry daily life, support the room visually, and meet every edge with intention. That means strong preparation, honest material guidance, and a finish process that does not rush the details.</p></div></section>
-    <section class="section"><div class="container split"><div><p class="eyebrow">Approach</p><h2>Not just installed. Integrated.</h2></div><div class="feature-list"><article class="feature"><span>01</span><div><h3>Material clarity</h3><p>We help compare hardwood, tile, LVP, laminate, carpet, and commercial systems based on traffic, moisture, maintenance, budget, and design goals.</p></div></article><article class="feature"><span>02</span><div><h3>Preparation first</h3><p>Subfloor flatness, movement, moisture, and room transitions are reviewed early because they shape the quality of the final surface.</p></div></article><article class="feature"><span>03</span><div><h3>Finish-aware execution</h3><p>Stair nosing, thresholds, base shoe, trim returns, and doorway details are planned so the project feels complete from every angle.</p></div></article></div></div></section>
-    <section class="section category-band"><div class="container"><p class="eyebrow">Standards</p><h2>What guides the work.</h2><div class="standards-grid section--tight"><article class="standard"><h3>Clean sequencing</h3><p>We plan removal, prep, installation, and finishing so occupied spaces stay as manageable as possible.</p></article><article class="standard"><h3>Product-fit thinking</h3><p>The right floor is selected for the room, not just the sample board. Moisture, traffic, pets, and cleaning habits matter.</p></article><article class="standard"><h3>Readable communication</h3><p>Scope, timing, site needs, and care guidance are explained plainly so decisions feel grounded.</p></article></div></div></section>
+    <section class="page-hero about-hero">
+      <div class="container about-hero__grid">
+        <div class="about-hero__copy">
+          <h1>Flooring work with design restraint and site discipline.</h1>
+          <nav class="about-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>About</span></nav>
+        </div>
+      </div>
+    </section>
+    <section class="section about-approach">
+      <div class="container about-split">
+        <div class="about-section-head">
+          <p class="eyebrow">Approach</p>
+          <h2>Not just installed. Integrated.</h2>
+          <p>Every recommendation starts with how the room is used, what the surface needs to tolerate, and how the floor meets adjacent spaces.</p>
+          <div class="about-mini-stats">
+            <span><i data-lucide="clipboard-check" aria-hidden="true"></i><span class="about-mini-stats__copy"><strong>Material fit</strong><small>Selected around traffic, moisture, and maintenance.</small></span></span>
+            <span><i data-lucide="ruler" aria-hidden="true"></i><span class="about-mini-stats__copy"><strong>Subfloor check</strong><small>Flatness and movement reviewed before installation.</small></span></span>
+            <span><i data-lucide="corner-down-right" aria-hidden="true"></i><span class="about-mini-stats__copy"><strong>Edge finish</strong><small>Transitions, trims, and thresholds planned early.</small></span></span>
+          </div>
+        </div>
+        <figure class="about-team-media">
+          <img src="img/generated/about-flooring-team.webp" alt="Team of flooring installation specialists reviewing materials and plans inside a modern home" loading="lazy">
+        </figure>
+      </div>
+    </section>
+    <section class="section about-craft">
+      <div class="container about-craft__grid">
+        <figure class="about-craft__media">
+          <img src="img/generated/about-prep-detail.webp" alt="Flooring preparation tools and material samples arranged on a subfloor" loading="lazy">
+          <figcaption><strong>Measure before material.</strong><span>Flatness, transitions, and finish profiles are checked before the visible surface is committed.</span></figcaption>
+        </figure>
+        <div class="about-section-head">
+          <p class="eyebrow">Craft discipline</p>
+          <h2>The quiet work under a clean floor.</h2>
+          <p>Better flooring is rarely about one dramatic decision. It is the result of small checks made in the right order: substrate, layout, product fit, edge profiles, and final care.</p>
+          <a class="text-link" href="services.html">Explore service groups</a>
+        </div>
+      </div>
+    </section>
+    <section class="section category-band about-standards"><div class="container"><div class="about-standards__head"><p class="eyebrow">Standards</p><h2>What guides the work.</h2></div><div class="standards-grid section--tight"><article class="standard"><i data-lucide="calendar-check" aria-hidden="true"></i><h3>Clean sequencing</h3><p>We plan removal, prep, installation, and finishing so occupied spaces stay as manageable as possible.</p></article><article class="standard"><i data-lucide="home" aria-hidden="true"></i><h3>Product-fit thinking</h3><p>The right floor is selected for the room, not just the sample board. Moisture, traffic, pets, and cleaning habits matter.</p></article><article class="standard"><i data-lucide="messages-square" aria-hidden="true"></i><h3>Readable communication</h3><p>Scope, timing, site needs, and care guidance are explained plainly so decisions feel grounded.</p></article></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><p data-footer-text-primary></p></div><div><h3>Services</h3><div class="footer-links" data-services-nav></div></div><div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div></div><div class="container footer-bottom"><span>&copy; <span data-year></span> <span data-company-legal-name></span></span><span data-disclaimer-short></span></div></footer>
-  <script src="js/site-config.js?v=20260606c"></script><script src="js/services-data.js?v=20260606c"></script><script src="js/main.js?v=20260606c"></script>
+    <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><p data-footer-text-primary></p></div>
+      <div><h3>Services</h3><div class="footer-links" data-services-nav></div></div>
+      <div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a></div></div>
+      <div><h3>Legal pages</h3><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
+    </div>
+    <div class="container footer-bottom"><div class="footer-bottom__meta"><span>&copy; <span data-year></span> <span data-company-legal-name></span>. <span data-company-id></span></span><span data-disclaimer-short></span></div><p class="footer-disclaimer" data-footer-disclaimer></p></div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="js/site-config.js?v=20260607ca"></script><script src="js/services-data.js?v=20260607ca"></script><script src="js/main.js?v=20260607ca"></script>
 </body>
 </html>

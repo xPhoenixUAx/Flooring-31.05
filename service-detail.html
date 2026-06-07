@@ -1,21 +1,45 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Service Detail | Floens</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bundle.css?v=20260606c">
+  <link rel="stylesheet" href="css/bundle.css?v=20260607ca">
 </head>
 <body data-service-page="">
-  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><nav class="desktop-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><div class="header-actions"><a class="btn" href="contact.html">Get a Quote</a><button class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu"></button></div></div></header>
-  <div class="mobile-menu" data-mobile-menu><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><div class="mobile-menu__meta"><a class="btn" href="contact.html">Get a Quote</a><p data-footer-text-primary></p></div></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name>Floens</span></a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="index.html">Home</a><a href="about.html">About</a><div class="nav-dropdown"><a class="nav-dropdown__trigger" href="services.html">Services<i data-lucide="chevron-down" aria-hidden="true"></i></a><div class="nav-dropdown__menu" data-services-dropdown></div></div><a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn phone-icon" data-phone-link aria-label="Call" href="tel:+15550182461"><i data-lucide="phone" aria-hidden="true"></i></a>
+        <a class="btn" href="contact.html" data-cta-primary>Get a Quote</a>
+        <button class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu"></button>
+      </div>
+    </div>
+  </header>
+    <div class="mobile-menu" data-mobile-menu>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
+    <div class="mobile-menu__meta"><a class="btn" href="contact.html">Get a Quote</a><p data-footer-text-primary></p></div>
+  </div>
   <main>
-    <section class="service-hero"><div class="container service-hero__grid"><div class="service-hero__copy"><p class="eyebrow" data-service-eyebrow></p><h1 data-service-title></h1><p class="lead" data-service-short></p><div class="hero-actions"><a class="btn" href="contact.html">Get a Quote</a><a class="btn btn--ghost" href="services.html">All Services</a></div></div><div class="service-hero__media"><img data-service-image src="" alt=""></div></div></section>
-    <section class="section"><div class="container content-grid"><aside class="sticky-note"><h3>Project fit</h3><p data-service-short></p><a class="btn" href="contact.html">Request Review</a></aside><div class="info-stack"><section class="info-block"><h2>Overview</h2><p data-service-intro></p></section><section class="info-block"><h2>Common situations</h2><ul class="check-list" data-service-situations></ul></section><section class="info-block"><h2>How we handle it</h2><ol class="number-list" data-service-process></ol></section><section class="info-block"><h2>Service details</h2><ul class="check-list" data-service-details></ul></section><section class="info-block"><h2>Questions</h2><div class="faq-list" data-service-faq></div></section></div></div></section>
+    <section class="service-hero"><div class="container service-hero__grid"><div class="service-hero__copy"><h1 data-service-title></h1><nav class="service-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="services.html">Services</a><span>/</span><span data-service-title></span></nav></div></div></section>
+    <section class="section"><div class="container content-grid"><aside class="sticky-note"><h3>Is this right for your floor?</h3><p data-service-short></p><a class="btn" href="contact.html">Request Review</a></aside><div class="info-stack"><section class="info-block"><h2>What this means for your home</h2><p data-service-intro></p></section><figure class="service-visual"><img data-service-image src="" alt="" loading="lazy"><figcaption><strong data-service-title></strong><span data-service-short></span></figcaption></figure><section class="info-block"><h2>What we take care of</h2><ul class="detail-list" data-service-included></ul></section><section class="info-block"><h2>Materials you can choose from</h2><ul class="material-list" data-service-materials></ul></section><section class="info-block"><h2>When this is a good fit</h2><ul class="check-list" data-service-situations></ul></section><section class="info-block"><h2>How the work usually goes</h2><ol class="number-list" data-service-process></ol></section><section class="info-block"><h2>Small details that matter</h2><ul class="check-list" data-service-details></ul></section><section class="info-block"><h2>Things people usually ask</h2><div class="faq-list" data-service-faq></div></section></div></div></section>
     <section class="section category-band"><div class="container"><p class="eyebrow">Related services</p><h2>Other flooring work to consider.</h2><div class="services-grid related-services" data-related-services></div></div></section>
+    <section class="section service-detail-cta-section"><div class="container service-detail-cta"><div><p class="eyebrow">Next step</p><h2>Need help deciding if this service fits your floor?</h2><p>Share the room, existing surface, material idea, and any unevenness, moisture, stairs, pets, or timing concerns. We will help clarify the right scope.</p></div><div class="service-detail-cta__actions"><a class="btn" href="contact.html">Get a Quote</a><a class="text-link" data-phone-link data-phone-text></a></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><p data-footer-text-primary></p></div><div><h3>Services</h3><div class="footer-links" data-services-nav></div></div><div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div></div><div class="container footer-bottom"><span>&copy; <span data-year></span> <span data-company-legal-name></span></span><span data-disclaimer-short></span></div></footer>
-  <script src="js/site-config.js?v=20260606c"></script><script src="js/services-data.js?v=20260606c"></script><script src="js/main.js?v=20260606c"></script>
+    <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><p data-footer-text-primary></p></div>
+      <div><h3>Services</h3><div class="footer-links" data-services-nav></div></div>
+      <div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a></div></div>
+      <div><h3>Legal pages</h3><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
+    </div>
+    <div class="container footer-bottom"><div class="footer-bottom__meta"><span>&copy; <span data-year></span> <span data-company-legal-name></span>. <span data-company-id></span></span><span data-disclaimer-short></span></div><p class="footer-disclaimer" data-footer-disclaimer></p></div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="js/site-config.js?v=20260607ca"></script><script src="js/services-data.js?v=20260607ca"></script><script src="js/main.js?v=20260607ca"></script>
 </body>
 </html>

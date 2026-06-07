@@ -1,20 +1,50 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Floens</title>
   <meta name="description" content="Request a flooring quote for installation, repair, refinishing, tile, LVP, carpet, subfloor preparation, or commercial flooring.">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/bundle.css?v=20260606c">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/bundle.css?v=20260607ca">
 </head>
-<body>
-  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><nav class="desktop-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><div class="header-actions"><a class="btn" href="contact.html">Get a Quote</a><button class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu"></button></div></div></header>
-  <div class="mobile-menu" data-mobile-menu><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><div class="mobile-menu__meta"><a class="btn" href="contact.html">Get a Quote</a><p data-footer-text-primary></p></div></div>
+<body class="contact-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name>Floens</span></a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="index.html">Home</a><a href="about.html">About</a><div class="nav-dropdown"><a class="nav-dropdown__trigger" href="services.html">Services<i data-lucide="chevron-down" aria-hidden="true"></i></a><div class="nav-dropdown__menu" data-services-dropdown></div></div><a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn phone-icon" data-phone-link aria-label="Call" href="tel:+15550182461"><i data-lucide="phone" aria-hidden="true"></i></a>
+        <a class="btn" href="contact.html" data-cta-primary>Get a Quote</a>
+        <button class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu"></button>
+      </div>
+    </div>
+  </header>
+    <div class="mobile-menu" data-mobile-menu>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
+    <div class="mobile-menu__meta"><a class="btn" href="contact.html">Get a Quote</a><p data-footer-text-primary></p></div>
+  </div>
   <main>
-    <section class="page-hero"><div class="container page-hero__grid"><div><p class="eyebrow">Contact</p><h1>Start with the rooms, material, and timing.</h1></div><p class="lead">Share what you know: existing floor, preferred material, approximate area, timeline, and any issues like squeaks, cracks, moisture, pets, stairs, or uneven surfaces.</p></div></section>
-    <section class="section"><div class="container contact-grid"><aside class="contact-methods"><div class="contact-method"><p class="eyebrow">Phone</p><h3><a data-phone-link data-phone-text></a></h3><p>Best for quick scheduling and urgent project questions.</p></div><div class="contact-method"><p class="eyebrow">Email</p><h3><a data-email-link data-email-text></a></h3><p>Send photos, measurements, material ideas, or project notes.</p></div><div class="contact-method"><p class="eyebrow">Hours</p><h3>Mon-Fri 8:00-18:00</h3><p>Saturday appointments may be available depending on project scope.</p></div></aside><form class="form" action="contact-submit.php" method="post"><label>Name<input name="name" autocomplete="name" required></label><label>Email<input type="email" name="email" autocomplete="email" required></label><label>Phone<input name="phone" autocomplete="tel"></label><label>Service<select name="service"><option>Hardwood floor installation</option><option>Luxury vinyl plank flooring</option><option>Tile installation</option><option>Laminate flooring</option><option>Hardwood refinishing</option><option>Carpet installation</option><option>Subfloor repair and leveling</option><option>Commercial flooring</option><option>Stair and trim finishing</option></select></label><label>Project details<textarea name="message" placeholder="Rooms, square footage, existing flooring, timeline, and material preference"></textarea></label><button class="btn" type="submit">Send Request</button><p data-disclaimer-short></p></form></div></section>
+    <section class="page-hero contact-hero">
+      <div class="container contact-hero__grid">
+        <div class="contact-hero__copy">
+          <h1>Let us look at the floor before you guess the fix.</h1>
+          <nav class="services-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-section"><div class="container contact-grid"><aside class="contact-methods"><div class="contact-intro"><p class="eyebrow">Get a quote</p><h2>Send the room details. We will help narrow the right scope.</h2><p>Tell us what surface you have now, what material you are considering, and anything that feels uneven, loose, stained, cracked, squeaky, or moisture-prone.</p></div><div class="contact-method"><i data-lucide="phone-call" aria-hidden="true"></i><div><p>Phone</p><h3><a data-phone-link data-phone-text></a></h3><span>Best for quick scheduling and urgent project questions.</span></div></div><div class="contact-method"><i data-lucide="mail" aria-hidden="true"></i><div><p>Email</p><h3><a data-email-link data-email-text></a></h3><span>Send photos, measurements, material ideas, or project notes.</span></div></div><div class="contact-method"><i data-lucide="clock" aria-hidden="true"></i><div><p>Hours</p><h3>Mon-Fri 8:00-18:00</h3><span>Saturday appointments may be available depending on project scope.</span></div></div></aside><form class="form" action="contact-submit.php" method="post"><label>Name<input name="name" autocomplete="name" required></label><label>Email<input type="email" name="email" autocomplete="email" required></label><label>Phone<input name="phone" autocomplete="tel"></label><label>Service<select name="service"><option>Hardwood floor installation</option><option>Luxury vinyl plank flooring</option><option>Tile installation</option><option>Laminate flooring</option><option>Hardwood refinishing</option><option>Carpet installation</option><option>Subfloor repair and leveling</option><option>Commercial flooring</option><option>Stair and trim finishing</option></select></label><label>Project details<textarea name="message" placeholder="Rooms, square footage, existing flooring, timeline, and material preference"></textarea></label><button class="btn" type="submit">Send Request</button><p data-disclaimer-short></p></form></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><p data-footer-text-primary></p></div><div><h3>Services</h3><div class="footer-links" data-services-nav></div></div><div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div></div><div class="container footer-bottom"><span>&copy; <span data-year></span> <span data-company-legal-name></span></span><span data-disclaimer-short></span></div></footer>
-  <script src="js/site-config.js?v=20260606c"></script><script src="js/services-data.js?v=20260606c"></script><script src="js/main.js?v=20260606c"></script>
+    <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><p data-footer-text-primary></p></div>
+      <div><h3>Services</h3><div class="footer-links" data-services-nav></div></div>
+      <div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a></div></div>
+      <div><h3>Legal pages</h3><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
+    </div>
+    <div class="container footer-bottom"><div class="footer-bottom__meta"><span>&copy; <span data-year></span> <span data-company-legal-name></span>. <span data-company-id></span></span><span data-disclaimer-short></span></div><p class="footer-disclaimer" data-footer-disclaimer></p></div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="js/site-config.js?v=20260607ca"></script><script src="js/services-data.js?v=20260607ca"></script><script src="js/main.js?v=20260607ca"></script>
 </body>
 </html>

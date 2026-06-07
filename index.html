@@ -1,4 +1,4 @@
-Ôªø<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -8,17 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bundle.css?v=20260606c">
+  <link rel="stylesheet" href="css/bundle.css?v=20260607ca">
 </head>
 <body class="home-page">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name>Floens</span></a>
       <nav class="desktop-nav" aria-label="Primary">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+        <a href="index.html">Home</a><a href="about.html">About</a><div class="nav-dropdown"><a class="nav-dropdown__trigger" href="services.html">Services<i data-lucide="chevron-down" aria-hidden="true"></i></a><div class="nav-dropdown__menu" data-services-dropdown></div></div><a href="contact.html">Contact</a>
       </nav>
       <div class="header-actions">
-        <a class="icon-btn phone-icon" data-phone-link aria-label="Call" href="tel:+15550182461"></a>
+        <a class="icon-btn phone-icon" data-phone-link aria-label="Call" href="tel:+15550182461"><i data-lucide="phone" aria-hidden="true"></i></a>
         <a class="btn" href="contact.html" data-cta-primary>Get a Quote</a>
         <button class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu"></button>
       </div>
@@ -41,12 +41,9 @@
             <a class="btn btn--ghost" href="services.html">Explore Services</a>
           </div>
         </div>
-        <div class="hero-panel" aria-label="Project strengths">
-          <div class="hero-panel__item"><strong>09</strong><span>flooring service lines</span></div>
-          <div class="hero-panel__item"><strong>01</strong><span>material-first plan</span></div>
-          <div class="hero-panel__item"><strong>360</strong><span>edge, trim, and transition thinking</span></div>
+        <div class="hero-craftsman" aria-hidden="true">
+          <img src="img/generated/installer-fullbody-cutout.webp" alt="">
         </div>
-        <div class="hero-material-tag"><span>Modern tile systems</span></div>
       </div>
     </section>
 
@@ -65,16 +62,16 @@
 
     <section class="section craft-section">
       <div class="container craft-grid">
-        <div class="craft-media">
-          <img src="img/generated/process-craft.webp" alt="Flooring installer checking subfloor and material layout with precision tools" loading="lazy">
-          <div class="craft-badge"><strong>Flat</strong><span>before finished</span></div>
-        </div>
         <div class="feature-list">
           <p class="eyebrow">Prepared surfaces</p>
           <h2>What you do not see decides how the floor performs.</h2>
-          <article class="feature"><span>01</span><div><h3>Subfloor truth</h3><p>Flatness, movement, moisture, and previous flooring conditions are checked before material decisions become expensive.</p></div></article>
-          <article class="feature"><span>02</span><div><h3>Layout control</h3><p>Plank direction, tile cuts, grout lines, stair nosing, and thresholds are planned as visible design details.</p></div></article>
-          <article class="feature"><span>03</span><div><h3>Finish integration</h3><p>Transitions, base shoe, reducers, trim returns, and care guidance are treated as part of the project, not cleanup.</p></div></article>
+          <article class="feature"><span><i data-lucide="layers" aria-hidden="true"></i></span><div><h3>Subfloor truth</h3><p>Flatness, movement, moisture, and previous flooring conditions are checked before material decisions become expensive.</p></div></article>
+          <article class="feature"><span><i data-lucide="layout-template" aria-hidden="true"></i></span><div><h3>Layout control</h3><p>Plank direction, tile cuts, grout lines, stair nosing, and thresholds are planned as visible design details.</p></div></article>
+          <article class="feature"><span><i data-lucide="badge-check" aria-hidden="true"></i></span><div><h3>Finish integration</h3><p>Transitions, base shoe, reducers, trim returns, and care guidance are treated as part of the project, not cleanup.</p></div></article>
+        </div>
+        <div class="craft-media">
+          <img src="img/generated/process-craft.webp" alt="Flooring installer checking subfloor and material layout with precision tools" loading="lazy">
+          <div class="craft-badge"><strong>Flat</strong><span>before finished</span></div>
         </div>
       </div>
     </section>
@@ -89,10 +86,10 @@
           <p>Every project moves through the same disciplined checkpoints, but the details adjust to material, room use, moisture, traffic, and timing.</p>
         </div>
         <div class="process-flow">
-          <article class="process-step"><span>01</span><div><h3>Review</h3><p>Goals, rooms, materials, site conditions, timing, transitions, and access needs are confirmed before scope is set.</p></div></article>
-          <article class="process-step"><span>02</span><div><h3>Prepare</h3><p>Old flooring, flatness, movement, moisture, and layout are solved before finish material goes down.</p></div></article>
-          <article class="process-step"><span>03</span><div><h3>Install</h3><p>Rows, cuts, spacing, grout lines, plank direction, and product-specific methods are handled with control.</p></div></article>
-          <article class="process-step"><span>04</span><div><h3>Finish</h3><p>Edges, thresholds, stairs, trim, care notes, and final inspection bring the floor into the room.</p></div></article>
+          <article class="process-step" data-step="01"><span>01</span><div><h3>Review</h3><p>Goals, rooms, materials, site conditions, timing, transitions, and access needs are confirmed before scope is set.</p></div></article>
+          <article class="process-step" data-step="02"><span>02</span><div><h3>Prepare</h3><p>Old flooring, flatness, movement, moisture, and layout are solved before finish material goes down.</p></div></article>
+          <article class="process-step" data-step="03"><span>03</span><div><h3>Install</h3><p>Rows, cuts, spacing, grout lines, plank direction, and product-specific methods are handled with control.</p></div></article>
+          <article class="process-step" data-step="04"><span>04</span><div><h3>Finish</h3><p>Edges, thresholds, stairs, trim, care notes, and final inspection bring the floor into the room.</p></div></article>
           <aside class="process-note"><strong>Built around the room</strong><p>No two substrates behave the same. The process keeps the visible finish tied to what the floor actually needs underneath.</p></aside>
         </div>
       </div>
@@ -100,24 +97,67 @@
 
     <section class="section testimonials-section">
       <div class="container testimonials-grid">
+        <div class="testimonials-carousel" data-testimonials-carousel>
+          <div class="testimonials-viewport">
+            <div class="testimonials-track">
+              <div class="testimonials-list">
+                <article class="testimonial-card testimonial-card--featured">
+                  <p>ìThe layout planning changed the whole room. The hardwood runs clean through the main living area, and every threshold looks intentional instead of patched in.î</p>
+                  <div><strong>Marina K.</strong><span>Hardwood installation</span></div>
+                </article>
+                <article class="testimonial-card">
+                  <p>ìThey caught subfloor issues before the LVP went down. It added a step, but the finished floor feels solid and quiet.î</p>
+                  <div><strong>Daniel R.</strong><span>LVP and subfloor prep</span></div>
+                </article>
+                <article class="testimonial-card">
+                  <p>ìThe tile lines in our entry finally make sense with the hallway. Clean work, clear timing, and no mess left behind.î</p>
+                  <div><strong>Priya S.</strong><span>Porcelain tile installation</span></div>
+                </article>
+              </div>
+              <div class="testimonials-list">
+                <article class="testimonial-card testimonial-card--featured">
+                  <p>ìOur stair trim and transitions finally match the rest of the house. The crew explained every choice before anything was cut.î</p>
+                  <div><strong>Owen M.</strong><span>Stair and trim finishing</span></div>
+                </article>
+                <article class="testimonial-card">
+                  <p>ìThe carpet install was fast, but it did not feel rushed. Corners, seams, and cleanup were all handled carefully.î</p>
+                  <div><strong>Elena V.</strong><span>Carpet installation</span></div>
+                </article>
+                <article class="testimonial-card">
+                  <p>ìThey refinished our older hardwood without making it look overworked. It still feels like our home, just sharper.î</p>
+                  <div><strong>Marcus T.</strong><span>Hardwood refinishing</span></div>
+                </article>
+              </div>
+              <div class="testimonials-list">
+                <article class="testimonial-card testimonial-card--featured">
+                  <p>ìThey helped us choose tile that could handle wet boots and still look clean next to the living room floor. The finished entry feels completely resolved.î</p>
+                  <div><strong>Hannah P.</strong><span>Porcelain tile entry</span></div>
+                </article>
+                <article class="testimonial-card">
+                  <p>ìOur office needed new flooring without stopping work for a week. The schedule was clear, and the commercial floor looks sharp.î</p>
+                  <div><strong>Victor L.</strong><span>Commercial flooring</span></div>
+                </article>
+                <article class="testimonial-card">
+                  <p>ìThe laminate install was cleaner than expected. Doorways, base trim, and transitions were handled like part of the design.î</p>
+                  <div><strong>Nora B.</strong><span>Laminate installation</span></div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials-controls" aria-label="Testimonials slideshow controls">
+            <button class="testimonials-arrow testimonials-arrow--prev" type="button" data-testimonials-prev aria-label="Previous testimonials"></button>
+            <div class="testimonials-dots">
+              <button type="button" data-testimonials-dot="0" aria-label="Show testimonials group 1"></button>
+              <button type="button" data-testimonials-dot="1" aria-label="Show testimonials group 2"></button>
+              <button type="button" data-testimonials-dot="2" aria-label="Show testimonials group 3"></button>
+            </div>
+            <button class="testimonials-arrow testimonials-arrow--next" type="button" data-testimonials-next aria-label="Next testimonials"></button>
+          </div>
+        </div>
         <div class="testimonials-intro">
           <p class="eyebrow">Client notes</p>
           <h2>Floors that feel calmer after the crew leaves.</h2>
           <p>Homeowners and small commercial clients usually notice the same things first: cleaner sequencing, better transitions, and fewer surprises once the old surface comes up.</p>
-        </div>
-        <div class="testimonials-list">
-          <article class="testimonial-card testimonial-card--featured">
-            <p>‚ÄúThe layout planning changed the whole room. The hardwood runs clean through the main living area, and every threshold looks intentional instead of patched in.‚Äù</p>
-            <div><strong>Marina K.</strong><span>Hardwood installation</span></div>
-          </article>
-          <article class="testimonial-card">
-            <p>‚ÄúThey caught subfloor issues before the LVP went down. It added a step, but the finished floor feels solid and quiet.‚Äù</p>
-            <div><strong>Daniel R.</strong><span>LVP and subfloor prep</span></div>
-          </article>
-          <article class="testimonial-card">
-            <p>‚ÄúThe tile lines in our entry finally make sense with the hallway. Clean work, clear timing, and no mess left behind.‚Äù</p>
-            <div><strong>Priya S.</strong><span>Porcelain tile installation</span></div>
-          </article>
         </div>
       </div>
     </section>
@@ -166,10 +206,11 @@
     <div class="container footer-grid">
       <div><a class="brand" href="index.html"><span class="brand-mark"></span><span data-company-name></span></a><p data-footer-text-primary></p></div>
       <div><h3>Services</h3><div class="footer-links" data-services-nav></div></div>
-      <div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
+      <div><h3>Contact</h3><div class="footer-links"><a data-phone-link data-phone-text></a><a data-email-link data-email-text></a></div></div>
+      <div><h3>Legal pages</h3><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
     </div>
-    <div class="container footer-bottom"><span>&copy; <span data-year></span> <span data-company-legal-name></span>. <span data-company-id></span></span><span data-disclaimer-short></span></div>
+    <div class="container footer-bottom"><div class="footer-bottom__meta"><span>&copy; <span data-year></span> <span data-company-legal-name></span>. <span data-company-id></span></span><span data-disclaimer-short></span></div><p class="footer-disclaimer" data-footer-disclaimer></p></div>
   </footer>
-  <script src="js/site-config.js?v=20260606c"></script><script src="js/services-data.js?v=20260606c"></script><script src="js/main.js?v=20260606c"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="js/site-config.js?v=20260607ca"></script><script src="js/services-data.js?v=20260607ca"></script><script src="js/main.js?v=20260607ca"></script>
 </body>
 </html>
