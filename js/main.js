@@ -229,7 +229,6 @@
           <article class="service-group-card">
             <div class="service-group-card__media">
               ${featured ? `<img src="${featured.image}" alt="${group.title}" loading="lazy">` : ""}
-              <span>${String(index + 1).padStart(2, "0")}</span>
             </div>
             <div class="service-group-card__body">
               <p class="eyebrow">${group.eyebrow}</p>
@@ -367,7 +366,59 @@
     const toggle = document.querySelector("[data-menu-toggle]");
     const menu = document.querySelector("[data-mobile-menu]");
     if (!toggle || !menu) return;
+    const nav = menu.querySelector("nav");
+    if (nav) {
+      const groupIcons = ["layers", "layout-grid", "hammer"];
+      nav.innerHTML = `
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="mobile-services" data-mobile-services>
+          <button class="mobile-services__summary" type="button" aria-expanded="false">Services</button>
+          <div class="mobile-services__panel">
+            ${serviceGroups.map((group, index) => `
+              <div class="mobile-services__group">
+                <a class="mobile-services__title" href="services.html#${groupId(group)}">
+                  <i data-lucide="${groupIcons[index] || "square-stack"}" aria-hidden="true"></i>
+                  <span>${group.title}</span>
+                </a>
+                <div class="mobile-services__links">
+                  ${group.slugs.map(bySlug).filter(Boolean).map((service) => `
+                    <a href="${serviceUrl(service)}">
+                      <i data-lucide="${serviceIcon(service)}" aria-hidden="true"></i>
+                      <span>${service.title}</span>
+                    </a>`).join("")}
+                </div>
+              </div>`).join("")}
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>`;
+    }
+    const servicesDetails = menu.querySelector(".mobile-services");
+    const servicesSummary = servicesDetails?.querySelector(".mobile-services__summary");
+    const servicesPanel = servicesDetails?.querySelector(".mobile-services__panel");
+    if (servicesDetails && servicesSummary && servicesPanel) {
+      servicesSummary.addEventListener("click", (event) => {
+        event.preventDefault();
+        const isOpen = !servicesDetails.classList.contains("is-open");
+        servicesDetails.classList.toggle("is-open", isOpen);
+        servicesSummary.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        servicesPanel.style.setProperty("height", isOpen ? `${servicesPanel.scrollHeight + 36}px` : "0px", "important");
+        servicesPanel.style.setProperty("opacity", isOpen ? "1" : "0", "important");
+        servicesPanel.style.setProperty("margin-top", isOpen ? "18px" : "0px", "important");
+        servicesPanel.style.setProperty("padding", isOpen ? "18px 18px 18px 20px" : "0 18px 0 20px", "important");
+        servicesPanel.offsetHeight;
+      });
+    }
     const close = () => {
+      if (servicesDetails && servicesPanel) {
+        servicesDetails.classList.remove("is-open");
+        servicesSummary?.setAttribute("aria-expanded", "false");
+        servicesPanel.style.setProperty("height", "0px", "important");
+        servicesPanel.style.setProperty("opacity", "0", "important");
+        servicesPanel.style.setProperty("margin-top", "0px", "important");
+        servicesPanel.style.setProperty("padding", "0 18px 0 20px", "important");
+        servicesPanel.offsetHeight;
+      }
       document.body.classList.remove("menu-open");
       toggle.setAttribute("aria-expanded", "false");
     };
@@ -430,6 +481,18 @@
     if (window.lucide && typeof window.lucide.createIcons === "function") {
       window.lucide.createIcons();
     }
+  };
+
+  const floatingPhoneCta = () => {
+    if (document.querySelector("[data-floating-phone]")) return;
+    const link = document.createElement("a");
+    link.className = "floating-phone-cta";
+    link.setAttribute("data-floating-phone", "");
+    link.setAttribute("data-phone-link", "");
+    link.setAttribute("aria-label", "Call for a flooring quote");
+    link.href = `tel:${config.phone || ""}`;
+    link.innerHTML = `<i data-lucide="phone" aria-hidden="true"></i>`;
+    document.body.appendChild(link);
   };
 
   const serviceGroupCarousel = () => {
@@ -697,9 +760,10 @@
   serviceGroupCarousel();
   serviceDirectory();
   testimonialsCarousel();
-  renderIcons();
+  floatingPhoneCta();
   cookieBanner();
   mobileMenu();
+  renderIcons();
   stickyHeader();
   revealOnScroll();
 })();

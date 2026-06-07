@@ -8,8 +8,6 @@
 .home-page .trust-item strong { font-size: .86rem; }
 .home-page .hero-panel__item strong { font-size: .76rem; }
 .home-page .hero-panel__item span { font-size: .78rem; }
-.home-page .craft-badge span { font-size: .7rem; }
-.home-page .craft-badge strong { font-size: 1.55rem; }
 .home-page .section { padding: clamp(48px, 7vw, 92px) 0; }
 .home-page .section--tight { padding: clamp(30px, 4.8vw, 58px) 0; }
 
@@ -193,17 +191,6 @@
   box-shadow: var(--shadow);
 }
 .craft-media img { width: 100%; aspect-ratio: 1.05 / 1; object-fit: cover; }
-.craft-badge {
-  position: absolute;
-  right: -18px;
-  bottom: 26px;
-  max-width: 210px;
-  padding: 20px;
-  background: var(--charcoal);
-  color: #fff;
-}
-.craft-badge strong { display: block; font-size: 2.2rem; line-height: 1; color: #fff; }
-.craft-badge span { color: #dbcabd; font-size: .82rem; font-weight: 800; text-transform: uppercase; }
 .feature-list { display: grid; gap: 18px; }
 .feature {
   display: grid;
@@ -394,12 +381,16 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity .55s ease, visibility .55s ease;
+  transform: translateY(8px);
+  z-index: 0;
+  transition: opacity .45s ease, visibility .45s ease, transform .45s ease;
 }
-.testimonials-list.is-active {
+.testimonials-track > .testimonials-list.is-active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transform: translateY(0);
+  z-index: 1;
 }
 .testimonials-controls {
   position: absolute;
@@ -471,15 +462,15 @@
   overflow: hidden;
 }
 .testimonial-card::before {
-  content: "";
+  content: "\201C";
   position: absolute;
-  right: 18px;
-  top: 18px;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  border: 12px solid rgba(197,122,67,.12);
-  opacity: .9;
+  right: 22px;
+  top: 12px;
+  color: rgba(197,122,67,.12);
+  font-size: 6.2rem;
+  font-weight: 900;
+  line-height: .78;
+  pointer-events: none;
 }
 .testimonial-card--featured {
   grid-column: 1 / -1;
@@ -747,12 +738,6 @@
   .craft-media {
     padding: 12px;
   }
-  .craft-badge {
-    right: -10px;
-    bottom: 18px;
-    max-width: 170px;
-    padding: 16px;
-  }
   .feature {
     grid-template-columns: 46px 1fr;
     gap: 14px;
@@ -833,7 +818,6 @@
   .trust-strip, .process-flow { grid-template-columns: 1fr; }
   .trust-item { border-right: 0; border-bottom: 1px solid var(--line); }
   .trust-item:last-child { border-bottom: 0; }
-  .craft-badge { position: static; max-width: none; margin-top: 12px; }
   .section-kicker, .services-intro { display: grid; }
   .testimonials-list { grid-template-columns: 1fr; }
   .testimonial-card--featured { grid-column: auto; }

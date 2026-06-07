@@ -191,18 +191,18 @@
   font-weight: 900;
 }
 .faq-list { display: grid; gap: 12px; }
-details {
+.faq-list details {
   background: rgba(255,250,243,.72);
   border: 1px solid var(--line);
   padding: 16px 18px;
 }
-summary {
+.faq-list summary {
   cursor: pointer;
   font-weight: 900;
   font-size: .92rem;
   color: var(--ink);
 }
-details p {
+.faq-list details p {
   margin-top: 10px;
   font-size: .9rem;
 }
@@ -397,5 +397,5 @@ details p {
   .service-hero__copy h1 { font-size: 1.55rem; }
   .sticky-note { padding: 24px; }
   .info-block { padding-bottom: 30px; }
-  details { padding: 18px; }
+  .faq-list details { padding: 18px; }
 }
